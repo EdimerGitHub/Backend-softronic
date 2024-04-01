@@ -101,9 +101,9 @@ WSGI_APPLICATION = 'softronicProject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'd745umcl6a84a0',
-        'USER': 'ud3e3t6dbs9b04',
-        'PASSWORD': 'p7419d976027378b13794c721938be335ed07020e267b58f2aa5d0a421e4f4924',
+        'NAME': 'd6hbmeqt4gcb8l',
+        'USER': 'u7hjdns2vv2gik',
+        'PASSWORD': 'p396d1b07bad3c7b9b7e04828ccde2a0716eca65516361c8f3ff65a1dfe6d7d7a',
         'HOST': 'c7gljno857ucsl.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com',
         'PORT': '5432',
     }
