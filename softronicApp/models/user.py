@@ -30,11 +30,11 @@ class UserManager(BaseUserManager):
     
 class User(AbstractUser):
 
-    class Genero(models.TextChoices):
-        SELECCIONE = "Seleccione", _("Seleccione")
-        MASCULINO = "Masculino", _("Masculino")
-        FEMENINO = "Femenino", _("Femenino")
-        OTRO = "Otro", _("Otro")
+    # class Genero(models.TextChoices):
+    #     SELECCIONE = "Seleccione", _("Seleccione")
+    #     MASCULINO = "Masculino", _("Masculino")
+    #     FEMENINO = "Femenino", _("Femenino")
+    #     OTRO = "Otro", _("Otro")
 
     rol = models.ForeignKey(Rol, related_name='Rol', on_delete=models.CASCADE)
     cedula = models.PositiveIntegerField('Cedula')
@@ -42,8 +42,8 @@ class User(AbstractUser):
     genero = models.CharField(
         'Genero',
         max_length=15,
-        choices=Genero,
-        default=Genero.SELECCIONE,
+        # choices=Genero,
+        # default=Genero.SELECCIONE,
         )
     rh = models.CharField('Tipo de sangre', max_length = 50)
     direccion = models.CharField('Direccion', max_length = 255)
